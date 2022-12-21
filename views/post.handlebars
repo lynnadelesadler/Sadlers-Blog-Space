@@ -2,7 +2,26 @@
   <h2>{{name}}</h2>
   <p>{{description}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
-  <p>
+  {{!-- <p>
     <button class="btn btn-primary">Comment on this Project!</button>
-  </p>
+  </p> --}}
 </div>
+<div class="card col-11 m-4 p-1">
+    <div class="card-title d-flex justify-content-between p-2 h4">
+        <p class="h2 text-warning">Comments</p>
+    </div>
+
+    {{#each post.comments as |comment|}}
+    {{> comment}}
+    {{/each}}
+
+    <div class="">
+        <textarea class="w-100 mb-5" name="comment" id="comment" cols="30" rows="5"></textarea>
+        <button class="btn btn-warning me-2" id="postComment">Save Comment</button>
+    </div>
+</div>
+
+<script src="../js/comment.js"></script>
+
+
+

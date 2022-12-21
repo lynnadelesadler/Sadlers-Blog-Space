@@ -4,8 +4,9 @@
   </div>
 </div>
 
-<div class="row">
-  <div class="col">
+<div class="container">
+  <div class="row row-cols-2">
+     <div class="col">
     <h3>Create a New Post:</h3>
 
     <form class="form new-post-form">
@@ -22,7 +23,8 @@
       </div>
     </form>
   </div>
-
+ 
+ <div class="col">
   {{#if posts.length}}
   <div class="post-list">
     <h3>Current Posts:</h3>
@@ -40,5 +42,7 @@
   </div>
   {{/if}}
 </div>
+</div>
+
 
 <script src="./js/profile.js"></script>

@@ -24,13 +24,8 @@
     {{/if}}
     <a href="/profile">Profile</a>
   </nav>
-  <main>
-    <aside>
-      <h2>Blog Space</h2>
-    </aside>
-    <div class="container container-fluid mt-5">
+  <main class="container container-fluid mt-5">
       {{{body}}}
-    </div>
   </main>
   <!-- If the user is logged in, load the JS script for when they logout -->
   {{#if loggedIn}}
