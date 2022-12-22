@@ -163,6 +163,6 @@
     display: flex;
     flex-flow: column wrap;
     align-content: flex-start;
-    align-items: center;
+    /* align-items: center; */
   }
   
