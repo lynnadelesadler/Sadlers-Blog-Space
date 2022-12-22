@@ -6,19 +6,45 @@
     <button class="btn btn-primary">Comment on this Project!</button>
   </p> --}}
 </div>
+<form>
+  <div class="form-group">
 <div class="card col-11 m-4 p-1">
     <div class="card-title d-flex justify-content-between p-2 h4">
-        <p class="h2 text-warning">Comments</p>
+        <p class="h2 text-warning">Comment on Post</p>
     </div>
 
-    {{#each post.comments as |comment|}}
-    {{> comment}}
-    {{/each}}
-
-    <div class="">
+    <div class="form-group">
         <textarea class="w-100 mb-5" name="comment" id="comment" cols="30" rows="5"></textarea>
         <button class="btn btn-warning me-2" id="postComment">Save Comment</button>
     </div>
+    </div>
+    </form>
+</div>
+ {{!-- comment display test one --}}
+<div>
+ {{#each post.comments as |comment|}}
+    {{> comment}}
+    {{/each}}
+</div>
+
+ {{!-- comment display test two --}}
+   <div class="col-md-6">
+  {{#if comments.length}}
+  <div class="comment-list">
+    <h3>Current Posts:</h3>
+
+    {{#each comments as |comment|}}
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <h4><a href="/comment/{{comment.id}}">{{comment.name}}</a></h4>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-sm btn-danger" data-id="{{comment.id}}">DELETE</button>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
 </div>
 
 <script src="../js/comment.js"></script>

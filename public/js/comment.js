@@ -8,7 +8,9 @@ postCommentHandler = async (event) => {
         const response = await fetch("/api/comments/", {
             method: "POST",
             body: JSON.stringify({ content, post_id }),
-            headers: { "Content-Type": "application/json" },
+            headers: { 
+                "Content-Type": "application/json" 
+            },
         });
         if (response.ok) {
             document.location.reload();
