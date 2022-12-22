@@ -12,7 +12,7 @@ https://github.com/lynnadelesadler/Sadlers-Blog-Space
 
 The URL of the Heroku deployment  ...
 
-
+https://sadlers-blog-space.herokuapp.com
 
 ## Installation
 - Install node.js if not already installed on your machine
