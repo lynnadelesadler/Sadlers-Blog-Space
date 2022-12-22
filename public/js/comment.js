@@ -18,6 +18,25 @@ postCommentHandler = async (event) => {
             alert("Comment could not be saved to the post");
         }
     }
-}
+};
 
-document.querySelector("#postComment").addEventListener("click", postCommentHandler);
+const delButtonHandler = async (event) => {
+    event.preventDefault();
+    if (event.target.hasAttribute('data-id')) {
+      const id = event.target.getAttribute('data-id');
+  
+      const response = await fetch(`/api/comments/${id}`, {
+        method: 'DELETE',
+      });
+  
+      if (response.ok) {
+        document.location.reload();
+      } else {
+        alert('Failed to delete comment');
+      }
+    }
+  };
+
+document.querySelector('#postComment').addEventListener('click', postCommentHandler);
+
+document.querySelector('.comment-list').addEventListener('click', delButtonHandler);
