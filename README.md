@@ -43,7 +43,7 @@ https://sadlers-blog-space.herokuapp.com
 - WHEN I click on the homepage option in the navigation
 THEN I am taken to the homepage and presented with existing blog posts that include the post title and the date created. 
 
-    - WHEN I click on an existing blog post, THEN I am presented with the post title, contents, post creator’s username, and date created for that post and have the option to leave a comment. 
+    - WHEN I click on an existing blog post, THEN I am presented with the post title, contents, post creator’s username, and date created for that post and have the option to leave a comment and delete the comment. 
 
     ![comment](./images/comment%20page.JPG)
 
@@ -54,7 +54,7 @@ For help with this webpage please contact
 |Lynn Sadler| lynnadelesadler@yahoo.com |
 
 ## Roadmap
-Check back to this page as enhancements could be made for usability and optimized display. Plans to be able to update the post and comments will be resolved in addition to deleting comments.
+Check back to this page as enhancements could be made for usability and optimized display. Plans to be able to update the post and comments will be resolved.
 
 
 ## Authors and acknowledgment

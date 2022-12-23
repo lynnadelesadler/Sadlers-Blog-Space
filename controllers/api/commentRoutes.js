@@ -4,7 +4,7 @@ const withAuth = require('../../utils/auth');
 
 
 //create a comment
-router.post("/", async (req, res) => {
+router.post("/",withAuth, async (req, res) => {
   console.log("create comment")
   try {
     const newComment = await Comment.create({
@@ -29,13 +29,12 @@ router.delete("/:id",withAuth, async (req, res) => {
       },
     });
 
-    if (commentData) {
-      res.status(200).json(commentData);
-    } else {
+    if (!postComment) {
       res.status(404).json({ message: "No comment found with this id!" });
-      return;
-    }
-
+      return; 
+    } 
+     
+    res.status(200).json(postComment);
   } catch (err) {
     res.status(500).json(err);
   }
