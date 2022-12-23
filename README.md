@@ -54,8 +54,7 @@ For help with this webpage please contact
 |Lynn Sadler| lynnadelesadler@yahoo.com |
 
 ## Roadmap
-Check back to this page as enhancements could be made for usability and optimized display. Plans to be able to update the post and comments will be resolved.
-
+Check back to this page as enhancements could be made for usability and optimized display. 
 
 ## Authors and acknowledgment
 Acknowledgment to  Node.js, MySQL, Sequelize and Handlebars as this application runs off these applications.  
