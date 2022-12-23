@@ -36,16 +36,22 @@ https://sadlers-blog-space.herokuapp.com
 
 ![login](./images/login.JPG)
 
-- WHEN I am signed in to the site, THEN I am sent to my Profile where I can create new posts and delete my existing posts. The navigation links for the homepage, the dashboard, and the option to log out will appear.
+- WHEN I am signed in to the site, THEN I am sent to my Profile where I can create new posts, update and delete my existing posts. The navigation links for the homepage, the dashboard, and the option to log out will appear.
 
 ![profile](./images/profile.JPG)
+
+- WHEN I click on a post I created from the Profile, THEN I am rerouted to a different page to update my post. Once I click the Save Post button on my update page I am rerouted back to my Profile page. 
+![updatePost](./images/updatePost.JPG)
+
 
 - WHEN I click on the homepage option in the navigation
 THEN I am taken to the homepage and presented with existing blog posts that include the post title and the date created. 
 
-    - WHEN I click on an existing blog post, THEN I am presented with the post title, contents, post creator’s username, and date created for that post and have the option to leave a comment and delete the comment. 
+![homepageTwo](./images/homepagetwo.JPG)
 
-    ![comment](./images/comment%20page.JPG)
+- WHEN I click on an existing blog post, THEN I am presented with the post title, contents, post creator’s username, and date created for that post and have the option to leave a comment and delete the comment. 
+
+![comment](./images/comment%20page.JPG)
 
 ## Support
 For help with this webpage please contact
