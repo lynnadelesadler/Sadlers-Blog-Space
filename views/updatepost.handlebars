@@ -1,0 +1,20 @@
+  <h2>
+    Edit Post
+    </h2>
+    <div>
+    Posted by you on {{format_date date_created}}
+    </div>
+
+  <form class="edit-post-form">
+    <div>
+      <input class="form-input" name="post-name" type="text" value="{{post.name}}" />
+      <textarea name="post-desc" id="post-desc">{{post.description}}</textarea>
+    </div>
+   
+    
+    </div>
+    <button type="submit" id="updatePost">Save post</button>
+    
+  </form>
+
+  <script src="../js/updatepost.js"></script>
